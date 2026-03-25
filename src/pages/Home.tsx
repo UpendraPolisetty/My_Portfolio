@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { LeaveCard } from '../components/LeaveCard';
 import { HomeMotion } from '../common/motion/Home';
-import { Link } from 'react-router-dom';
 
 export const Home = () => {
   const { description, resume, wrapImg, image } = HomeMotion;
@@ -29,7 +28,7 @@ export const Home = () => {
           focus on creating maintainable, scalable code and delivering great
           user experiences.
         </p>
-        <Link to="./Upendra-Polisetty-CV.pdf" target="_blank">
+        <a href="/UPENDRA_RESUME.pdf" download>
           <motion.div
             initial={resume.initial}
             animate={resume.animated}
@@ -38,7 +37,7 @@ export const Home = () => {
           >
             Download Resume
           </motion.div>
-        </Link>
+        </a>
       </motion.div>
       <motion.div
         initial={wrapImg.initial}
