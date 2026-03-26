@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { IconClockPlay } from '@tabler/icons-react';
+import { IconClockPlay, IconBriefcase } from '@tabler/icons-react';
 import { SectionMotion } from '../common/motion/Section';
 import { SectionHeader } from '../components/SectionHeader';
 import { CommonCard } from '../components/CommonCard';
@@ -7,11 +7,12 @@ import { CommonCard } from '../components/CommonCard';
 export const Experience = () => {
   const { section } = SectionMotion;
   const sectionDescription = 'My proffesional career journey';
+  const iconStyles = { width: '100%', height: '100%', strokeWidth: '1.5' };
   // mockup experience data
   const experiences = [
     {
       id: 1,
-      image: '/vite.svg',
+      image: <IconBriefcase style={iconStyles} />,
       name: 'DATAECONOMY',
       position: 'Software Engineer',
       startDate: 'Jun 2024',
@@ -21,7 +22,7 @@ export const Experience = () => {
     },
     {
       id: 2,
-      image: '/vite.svg',
+      image: <IconBriefcase style={iconStyles} />,
       name: 'Tata Consultancy Services',
       position: 'Associate System Engineer',
       startDate: 'Feb 2022',
@@ -31,7 +32,7 @@ export const Experience = () => {
     },
     {
       id: 3,
-      image: '/vite.svg',
+      image: <IconBriefcase style={iconStyles} />,
       name: 'JSpiders - Training & Development Center',
       position: 'Student (Internship)',
       startDate: 'Aug 2021',
@@ -41,7 +42,7 @@ export const Experience = () => {
     },
     {
       id: 4,
-      image: '/vite.svg',
+      image: <IconBriefcase style={iconStyles} />,
       name: 'Foxlink',
       position: 'Plant Engineer',
       startDate: 'Jan 2021',
@@ -51,7 +52,7 @@ export const Experience = () => {
     },
     {
       id: 5,
-      image: '/vite.svg',
+      image: <IconBriefcase style={iconStyles} />,
       name: 'Indo-MIM Pvt. Ltd.',
       position: 'Graduate Engineering Trainee',
       startDate: 'Aug 2020',

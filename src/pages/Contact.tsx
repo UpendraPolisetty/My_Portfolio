@@ -14,7 +14,7 @@ import { ContactCard } from '../components/ContactCard';
 export const Contact = () => {
   const { section } = SectionMotion;
   const sectionDescription = 'Feel free to contact me';
-  const iconStyles = { width: '100%', height: '100%' };
+  const iconStyles = { width: '100%', height: '100%', strokeWidth: '1.5' };
   const contacts = [
     {
       id: 1,

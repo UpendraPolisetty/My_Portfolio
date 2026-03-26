@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { IconBallpen } from '@tabler/icons-react';
+import { IconBallpen, IconSchool } from '@tabler/icons-react';
 import { SectionMotion } from '../common/motion/Section';
 import { SectionHeader } from '../components/SectionHeader';
 import { CommonCard } from '../components/CommonCard';
@@ -7,11 +7,12 @@ import { CommonCard } from '../components/CommonCard';
 export const Education = () => {
   const { section } = SectionMotion;
   const sectionDescription = 'My education history';
+  const iconStyles = { width: '100%', height: '100%', strokeWidth: '1.5' };
   // mockup education data
   const educations = [
     {
       id: 1,
-      image: '/vite.svg',
+      image: <IconSchool style={iconStyles} />,
       name: 'Siddharth Institute of Engineering & Technology, Puttur',
       position: 'Bachelor of Technology - BTech, Mechanical Engineering',
       startDate: 'Jul 2016',

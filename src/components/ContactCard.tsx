@@ -12,7 +12,7 @@ export const ContactCard = (props: ContactCardProps) => {
   const { image, name, description, link } = props;
   return (
     <motion.div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 w-full p-4 rounded-xl bg-gray-900">
-      <div className="w-20 h-20">{image}</div>
+      <div className="w-20 h-20 flex items-center justify-center">{image}</div>
       <div className="flex flex-col space-y-2 items-start text-gray-400 text-sm break-words">
         <div>
           <h2 className="text-lg font-bold text-white">{name}</h2>

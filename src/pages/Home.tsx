@@ -49,7 +49,7 @@ export const Home = () => {
           initial={image.initial}
           animate={image.animated}
           transition={image.transition}
-          src="/bayu-no-bg.webp"
+          src="/MyImage.webp"
           alt="profile"
           width="50%"
           height="50%"
